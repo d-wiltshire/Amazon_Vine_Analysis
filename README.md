@@ -9,6 +9,17 @@ The ETL process involved using PySpark (in Google Colaboratory) to extract the d
 
 ## Results
 
+The following is an image of the top of the complete vine_table data exported from pgAdmin:
+
+![16_vine_table_pgadmin](https://user-images.githubusercontent.com/100863488/174141364-9e3d7fce-8386-4263-bc25-5be0e06a6899.png)
+
+
+The following is an image of the two dataframes created with Python/Pandas to learn more about Vine and non-Vine reviews:
+
+![16_vine_tablesjup](https://user-images.githubusercontent.com/100863488/174141385-8e94a86a-cadc-4056-8db0-e459cc89210b.png)
+
+
+
 * How many Vine reviews and non-Vine reviews were there?
   * The total number of reviews written as part of the Vine program was 47. The total number of reviews NOT written as part of the Vine program was 8362.
 * How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
@@ -17,9 +28,8 @@ The ETL process involved using PySpark (in Google Colaboratory) to extract the d
   * The percentage of Vine reviews giving 5-star reviews was 31.914893617021278% . The percentage of NON-Vine reviews giving 5-star reviews was 51.80578808897393% .
 
 
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
+## Summary
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+From these results it does not appear that there is any positivity bias for 5-star reviews in the Vine program, since the percentage of 5-star reviews among all Vine (paid) reviews in this dataset was 31.9%, and the percentage of 5-star reviews among non-paid reviews was 51.8%.
+
+Then, provide one additional analysis that you could do with the dataset to support your statement.
