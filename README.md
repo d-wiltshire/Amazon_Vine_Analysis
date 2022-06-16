@@ -20,6 +20,8 @@ The following is an image of the two dataframes created with Python/Pandas to le
 
 
 
+As part of the ETL process, the table of reviews was filtered to remove any reviews with fewer than 20 votes in the "total votes" column, as well as any reviews where the votes marked "helpful" did not comprise at least 50% of the total votes for a review. After this filtering of the dataset:
+
 * How many Vine reviews and non-Vine reviews were there?
   * The total number of reviews written as part of the Vine program was 47. The total number of reviews NOT written as part of the Vine program was 8362.
 * How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
