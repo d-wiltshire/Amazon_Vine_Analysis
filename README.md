@@ -25,11 +25,15 @@ The following is an image of the two dataframes created with Python/Pandas to le
 * How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
   * The total number of 5-star reviews given in Vine reviews was 15. The total number of 5-star reviews given in non-Vine reviews was 4332.
 * What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-  * The percentage of Vine reviews giving 5-star reviews was 31.914893617021278% . The percentage of NON-Vine reviews giving 5-star reviews was 51.80578808897393% .
+  * The percentage of Vine reviews giving 5-star reviews was 31.915%. The percentage of NON-Vine reviews giving 5-star reviews was 51.806%.
 
 
 ## Summary
 
 From these results it does not appear that there is any positivity bias for 5-star reviews in the Vine program, since the percentage of 5-star reviews among all Vine (paid) reviews in this dataset was 31.9%, and the percentage of 5-star reviews among non-paid reviews was 51.8%.
 
-Then, provide one additional analysis that you could do with the dataset to support your statement.
+An additional analysis that could be performed with this dataset could involve the "Verified Purchase" column of information. It is my understanding that "Verified Purchase" refers to reviews left by customers who purchased the item directly through Amazon. Reviews without a "verified purchase" therefore do not have any confirmation that the individual bought or owns the product being reviewed, and these could be reviews created by bots to increase the rating artificially, reviews left by consumers who purchased the item in other locations, etc. It would be helpful to have data regarding the relative star ratings between users who had a "verified purchase" of the item versus users who did not.
+
+If there is a large discrepancy between the non-Vine (unpaid) "Verified Purchase" reviews and the non-Vine reviews not associated with a Verified Purchase, that may cause us to interpret our Vine/non-Vine results differently. If the majority of non-Vine 5-star ratings are from users without a Verified Purchase, but the majority of Vine 5-star ratings are from users with a Verified Purchase, we may have reason to reconsider our conclusion regarding Vine positivity bias.
+
+
