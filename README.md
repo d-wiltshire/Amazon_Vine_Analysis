@@ -4,7 +4,9 @@
 
 The goal of this exercise was to select a dataset of Amazon reviews (from the list <a href="https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt">available here</a>) and use an ETL process to determine whether the reviews collected as part of the paid Amazon Vine program contained a disproportionate amount of 5-star reviews relative to reviews not part of the Vine program. I selected the "Watches" dataset available here: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Watches_v1_00.tsv.gz
 
-The ETL process involved using PySpark (in Google Colaboratory) to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. The transformed data was then exported out of pgAdmin as a .csv file and loaded into a Jupyter Notebook for further transformations and analysis using Python/Pandas. 
+This process took place in two major deliverables. First, the ETL process involved using PySpark (in Google Colaboratory) to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, the transformed data was then exported out of pgAdmin as a .csv file and loaded into a Jupyter Notebook for further transformations and Vine review analysis using Python/Pandas. 
+
+The PySpark process to create four tables in pgAdmin is detailed in the included Amazon_Reviews_ETL notebook, and the transformation process of the Vine data is detailed in the included Vine_Review_Analysis notebook.
 
 
 ## Results
@@ -20,7 +22,7 @@ The following is an image of the two dataframes created with Python/Pandas to le
 
 
 
-As part of the ETL process, the table of reviews was filtered to remove any reviews with fewer than 20 votes in the "total votes" column, as well as any reviews where the votes marked "helpful" did not comprise at least 50% of the total votes for a review. After this filtering of the dataset:
+As part of the Vine ETL process using Python/Pandas, the table of reviews was filtered to remove any reviews with fewer than 20 votes in the "total votes" column, as well as any reviews where the votes marked "helpful" did not comprise at least 50% of the total votes for a review. After this filtering of the dataset:
 
 * How many Vine reviews and non-Vine reviews were there?
   * The total number of reviews written as part of the Vine program was 47. The total number of reviews NOT written as part of the Vine program was 8362.
